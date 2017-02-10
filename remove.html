@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = "https://cdn.wilddog.com/js/client/current/wilddog.js" ></script>
+	<script src="vocabulary.js"></script>
+</head>
+<body>
+<script>
+	var ref = new Wilddog("https://miemie.wilddogio.com/web/word-list");
+	for(i=0;i<200;i++) {
+		console.log(word_list[i]);
+		ref.child(word_list[i]).remove();
+	}
+	
+</script>
+</body>
+</html>
